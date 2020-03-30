@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: url(./img/fondo.png);
+    background-repeat: no-repeat;
+    background-position: inherit;
+    background-size: cover
+}
+.first_container{
+    background-image: url(./img/imgfondo.jpg);
+    background-repeat: no-repeat;
+    background-position: 12%;
+    background-size: cover;
+}
+.logo_box{
+    width: 100%;
+    text-align: right;
+}
+.logo_box a{
+    text-decoration: none;
+}
+.logo_box img{
+    width: 8rem;
+    margin: 1rem;
+}
+.title_box{
+    padding: 2rem;
+} 
+.title_box h1{
+    color: #fff;
+    font-weight: 700;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+.second_container{
+    color: #fff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.thirdSection{
+    background-color: #000;
+    color: #fff;
+}
+.thirdSection p{
+    margin: 0;
+}
+.thirdSection a{
+    text-decoration: none;
+}
+.title_third{
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #018387;
+    font-weight: 700;
+    color: #018387;
+    font-size: 18px;
+}
+.services_box{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+.service{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.icon_service img{
+    width: 3rem;
+    margin-right: 1rem;
+}
+.footer_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 4rem 0rem;
+    color: #fff;
+
+}
+.title_footer{
+    font-size: 18px;
+    font-weight: 600;
+}
+.footer_1_container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 80%;
+}
+
+.contact_1 img,
+.contact img{
+    width: 3rem;
+}
+
+.footer_2{
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+.footer_2 a{
+    font-size: 12px;
+    font-style: italic;
+    text-decoration: none;
+    color: #000;
+}
+.contact_1 a p,
+.contact a p{
+    margin: 0;
+}
+.contact_1 a,
+.contact a{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000;
+    padding: 0rem 1rem;
+    border-radius: 45px;
+    margin: 1rem;
+    max-width: 300px;
+}
+.portrait{
+    display: none;
+}
+.curva{
+    width: 100%;
+    z-index: 20;
+    position: absolute;
+    margin-top: -12%;
+  }
+
+@media(max-width:520px){
+    .second_container p br{
+        display: none;
+    }
+    .second_container{
+        text-align: center;
+    }
+}
+@media(max-width:992px){
+    .service{
+        margin-bottom: 2rem;
+    }
+    .contact_1 a,
+    .contact a{
+        width: 290px;
+    }
+}
+@media(min-width:992px){
+  
+    .logo_box img{
+        width: 13rem;
+        margin: 2rem;
+    }
+    .first_container{
+        background-position: initial;
+    }
+
+    .second_text{
+        margin: 0rem 10rem;
+        padding-bottom: 2rem;
+    }
+    .second_text,
+    .title_box{
+        margin: 4rem 10rem;
+    }
+    .second_container p{
+        font-size: 20px;
+    }
+    .title_box h1{
+        font-size: 75px;
+        margin-top: 3rem;
+        margin-bottom: 10rem;
+    }
+    .second_container{
+        align-items: initial;
+    }
+    .services_box{
+        flex-direction: row;
+    }
+    .title_footer{
+        display: none;
+    }
+    .footer_1_container{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        width: 90%;
+    }
+    .mobile{
+        display: none;
+    }
+    .portrait{
+        display: block;
+    }
+}
